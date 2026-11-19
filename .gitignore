@@ -1,0 +1,14 @@
+news_web/data/
+news_web/local_ai/
+__pycache__/
+*.py[cod]
+.env*
+.dev.vars*
+.wrangler/
+node_modules/
+*.db
+*.sqlite*
+*.log
+
+.local-deploy/
+.wrangler/

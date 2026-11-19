@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="zh-CN">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Market Brief · 财经新闻台</title><link rel="stylesheet" href="/static/styles.css?v=aab814a72c1a"><link rel="stylesheet" href="/static/topics.css?v=aab814a72c1a"><script src="/static/app.js?v=aab814a72c1a" defer></script><meta name="ui-version" content="aab814a72c1a"></head>
+<body>
+<header class="topbar"><a class="brand" href="/">M<span>↗</span></a><span class="brand-name">MARKET BRIEF<small>全球财经新闻台</small></span><span class="edition">PERSONAL EDITION <b>免费云端版</b></span></header>
+<main>
+<section class="sector-overview" aria-labelledby="sector-heading">
+<div class="sector-heading"><div><div class="eyebrow">SECTOR SIGNALS</div><h1 id="sector-heading">板块消息汇集</h1></div><label>新闻回溯 <select id="sector-window" aria-label="板块消息回溯时间"><option value="24">最近 24 小时</option><option value="72">最近 3 天</option><option value="168" selected>最近 7 天</option></select></label></div>
+<p class="disclosure">点击板块模块查看利好、利空及验证对象，再次点击收起。同一消息可能影响多个板块；归类为条件推断，不代表已验证涨跌。</p>
+<p id="sector-summary" class="disclosure" role="status">正在汇集板块消息…</p><div id="sector-board" class="sector-board"></div>
+<details class="history-coverage"><summary>查看各信源实际回溯范围（不保证全量）</summary><p id="history-note" class="disclosure">正在核查已收录范围…</p><div id="history-sources"></div></details>
+</section>
+<section class="hero"><div><div class="eyebrow">THE SIGNAL, IN CONTEXT.</div><h1>看见新闻，<br>追踪市场的下一步。</h1><p>把全球报道汇集在一个地方，先看事实，再判断影响。</p></div><div class="hero-status"><span class="live-dot"></span> 云端采集 · 计划每 30 分钟<br><small id="last-check">正在读取来源状态…</small><div class="hero-number"><strong id="article-count">—</strong><span>篇已收录文章</span></div></div></section>
+<section class="metrics" aria-label="监测概况"><div><small>计划覆盖</small><strong>11 <span>家媒体</span></strong></div><div><small>已配置采集源</small><strong id="configured">—</strong></div><div><small>最近检查成功</small><strong id="healthy">—</strong></div><div><small>中文与影响解读</small><strong class="future" id="ai-status">正在读取</strong></div></section>
+<div class="workspace"><aside><div class="section-label">新闻来源 <span>11</span></div><nav id="source-nav" aria-label="媒体筛选"></nav><div class="aside-note"><strong>关于中文解读</strong><p id="ai-note">基于公开标题与摘要生成概述及潜在影响，保留原文。实际行情服务未接入。</p><a href="#coverage">查看来源覆盖 ↗</a></div></aside>
+<section class="feed"><div class="feed-heading"><div><div class="eyebrow">YOUR NEWSROOM</div><h2 id="feed-title">最新新闻</h2></div><button id="refresh" type="button">↻ 刷新云端记录</button></div>
+<div class="search-row"><label class="search-box"><span aria-hidden="true">⌕</span><input id="search" type="search" maxlength="200" placeholder="搜索标题、公司或股票关键词" aria-label="搜索新闻"></label><label class="unread-toggle"><input id="unread" type="checkbox"> 只看未读</label></div>
+<div id="topic-filters" class="topic-filters" role="group" aria-label="新闻主题筛选"></div>
+<p class="disclosure">新闻列表与顶部回溯时间同步 · 默认近 7 天已收录新闻 · 公开标题／摘要 · 中文解读按队列生成 · 潜在影响未验证实际价格反应</p><div id="feedback" role="status" aria-live="polite"></div><div id="articles" aria-live="polite"><div class="empty">正在读取新闻…</div></div>
+<div id="pagination" class="topic-filters" aria-label="新闻翻页"></div>
+<div class="coverage" id="coverage"><div class="eyebrow">SOURCE COVERAGE</div><h2>每个来源，状态透明。</h2><p>检查成功表示已读取公开源，不代表该媒体的全部报道均已收录。</p><div id="source-status"></div></div>
+<div class="coverage"><h2>采集连续性</h2><p id="continuity-summary">正在读取采集记录…</p><details><summary>查看栏目与缺口记录</summary><div id="channel-status"></div><div id="gap-status"></div></details></div></section></div>
+<footer>MARKET BRIEF <span>公开新闻聚合 · 免费云端服务 · 时间统一为北京时间</span></footer>
+</main></body></html>
