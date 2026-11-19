@@ -10,7 +10,7 @@ async function snapshot(env,key){
  const row=await env.DB.prepare('SELECT payload FROM snapshots WHERE key=?').bind(key).first();
  if(!row)return json({error:'首次同步尚未完成'},503);
  const value=JSON.parse(row.payload);
- if(value._gzip){const bytes=Uint8Array.from(atob(value._gzip),c=>c.charCodeAt(0));return new Response(bytes,{headers:{...HEADERS,'content-encoding':'gzip','vary':'Accept-Encoding'}});}
+ if(value._gzip){const bytes=Uint8Array.from(atob(value._gzip),c=>c.charCodeAt(0));return new Response(bytes,{encodeBody:'manual',headers:{...HEADERS,'content-encoding':'gzip','vary':'Accept-Encoding'}});}
  return new Response(row.payload,{headers:HEADERS});
 }
 
